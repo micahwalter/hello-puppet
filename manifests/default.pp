@@ -21,3 +21,11 @@ service { "apache2":
   ensure  => "running",
   require => Package["apache2"],
 }
+
+file { "/var/www/test":
+  ensure  => "link",
+  target  => "/vagrant",
+  require => Package["apache2"],
+  notify  => Service["apache2"],
+}
+
