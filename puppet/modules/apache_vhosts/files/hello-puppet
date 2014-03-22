@@ -2,12 +2,12 @@
     ServerAdmin webmaster@localhost
     ServerName hello-puppet.dev
 
-    DocumentRoot /var/www/hello-puppet/www
+    DocumentRoot /var/www/hello-puppet
     <Directory />
         Options FollowSymLinks
         AllowOverride None
     </Directory>
-        <Directory /var/www/hello-puppet/www>
+        <Directory /var/www/hello-puppet>
         Options Indexes FollowSymLinks MultiViews
         AllowOverride None
         Order allow,deny
