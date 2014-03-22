@@ -1,6 +1,6 @@
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    ServerName hello-puppet
+    ServerName hello-puppet.dev
 
     DocumentRoot /var/www/hello-puppet/www
     <Directory />
